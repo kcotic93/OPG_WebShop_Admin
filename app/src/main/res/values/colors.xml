@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#A9D440</color>
+
+    <color name="LoginButton">#A9D440</color>
+    <color name="Edit_txt_focus">#A9D440</color>
+
+    <color name="overlayBackground">#7F333639</color>
+
+
+
+
+
+</resources>
+

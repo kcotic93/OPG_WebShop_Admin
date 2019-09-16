@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kristijan.opgwebshopadmin">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/grape"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UserAdministration.LogIn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/title_activity_main_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Product.Products"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserAdministration.CreateAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Base"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Product.ProductDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".News"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Categorys.AddCategory"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Categorys.UpdateCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Product.AddProduct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Product.UpdateProduct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateAbout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Orders.NewOrders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Orders.RecievedOrders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Orders.ShippedOrders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserAdministration.Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserAdministration.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserAdministration.ResetPassword"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.kristijan.opgwebshopadmin.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name=".Service.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Orders.CancelOrders"></activity>
+    </application>
+
+</manifest>

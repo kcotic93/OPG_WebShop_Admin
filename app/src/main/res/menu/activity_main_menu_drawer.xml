@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/group_menu">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/actionBarProfil" />
+
+    </group>
+
+
+    <group android:id="@+id/group_menu2">
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_access_time_white_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/new_orders" />
+
+        <item
+            android:id="@+id/nav_orders_recieved"
+            android:icon="@drawable/ic_access_time_white_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/recieved_orders" />
+
+        <item
+            android:id="@+id/nav_orders_shipped"
+            android:icon="@drawable/ic_access_time_white_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/shipped_orders" />
+        <item
+            android:id="@+id/nav_orders_cancel"
+            android:icon="@drawable/ic_access_time_white_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/cancel_orders" />
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_new_releases_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/news" />
+
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_outline_white_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/about_us" />
+
+
+    </group>
+
+    <group android:id="@+id/group_menu3">
+
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/Signout" />
+
+    </group>
+
+</menu>
